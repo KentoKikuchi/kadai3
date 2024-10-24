@@ -1,11 +1,104 @@
-<!doctype html>
-<html>
-    <head>
-    <meta charset="utf-8">
-    <title>HTMLの基本</title>
-    </head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ケーキ屋さんのメニュー</title>
+    <style>
+        /* 基本のリセット */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <body>
-        
-    </body>
-</html>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* ケーキリスト全体のレイアウト */
+        .cake-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* 各ケーキのスタイル */
+        .cake-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .cake-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .cake-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .cake-item h3 {
+            margin: 15px 0 10px;
+            color: #333;
+        }
+
+        .cake-item p {
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ケーキ屋さんのメニュー</h1>
+
+    <div class="cake-list">
+        <!-- ケーキ1 -->
+        <div class="cake-item">
+            <img src="cake/images/cake1.jpg" alt="チョコレートケーキ">
+            <h3>チョコレートケーキ</h3>
+            <p>濃厚なチョコレートが特徴のケーキ。</p>
+        </div>
+
+        <!-- ケーキ2 -->
+        <div class="cake-item">
+            <img src="cake/images/cake2.jpg" alt="イチゴケーキ">
+            <h3>イチゴケーキ</h3>
+            <p>新鮮なイチゴを使用したふわふわケーキ。</p>
+        </div>
+
+        <!-- ケーキ3 -->
+        <div class="cake-item">
+            <img src="cake/images/cake3.jpg" alt="レモンケーキ">
+            <h3>レモンケーキ</h3>
+            <p>爽やかなレモンの風味が楽しめるケーキ。</p>
+        </div>
+
+        <!-- ケーキ4 -->
+        <div class="cake-item">
+            <img src="cake/images/cake4.jpg" alt="モンブラン">
+            <h3>モンブラン</h3>
+            <p>栗を使った秋の定番ケーキ。</p>
+        </div>
+
+        <!-- 追加のケーキ項目はここに -->
+    </div>
+
+</body>
+</html> 
